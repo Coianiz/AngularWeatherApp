@@ -11,6 +11,8 @@ import { AddComponent } from './add/add.component';
 import { NguiAutoCompleteModule } from '@ngui/auto-complete';
 import { AngularFireLite } from 'angularfire-lite';
 import { environment } from 'src/environments/environment';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { environment } from 'src/environments/environment';
     WeatherCardComponent,
     AddCardComponent,
     DetailsComponent,
-    AddComponent
+    AddComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

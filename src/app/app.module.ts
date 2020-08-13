@@ -9,6 +9,8 @@ import { AddCardComponent } from './add-card/add-card.component';
 import { DetailsComponent } from './details/details.component';
 import { AddComponent } from './add/add.component';
 import { NguiAutoCompleteModule } from '@ngui/auto-complete';
+import { AngularFireLite } from 'angularfire-lite';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NguiAutoCompleteModule } from '@ngui/auto-complete';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NguiAutoCompleteModule
+    NguiAutoCompleteModule,
+    AngularFireLite.forRoot(environment.config)
   ],
   providers: [],
   bootstrap: [AppComponent]
